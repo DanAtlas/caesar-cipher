@@ -16,10 +16,10 @@ canvas {
 	text-align: center;
 }
 .form-container {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: fixed;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
 }
 .contant-title h1 {
 	font-size: 38px;
