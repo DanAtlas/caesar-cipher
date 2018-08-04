@@ -5,10 +5,10 @@
 	font-family: 'Ruda', sans-serif;
 }
 canvas {
-    height: 100vh;
-    z-index: -10;
-    position: fixed;
-    top: 0px;
+   	height: 100vh;
+   	z-index: -10;
+    	position: fixed;
+    	top: 0px;
 }
 .container {
 	width: 100%;
@@ -86,5 +86,10 @@ canvas {
 	}
 	.section1 h2, .section2 h2, .section3 h2 {
 		font-size: 20px;
+	}
+	.button-enc, .button-dec {
+		margin: 10px;
+		padding: 6px 20px;
+		font-size: 14px;
 	}
 }
