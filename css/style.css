@@ -9,28 +9,34 @@
 ::selection { color: #fff; background: #7ad2fa; }
 
 /*canvas {
-    height: 100vh;
-    z-index: -10;
-    position: fixed;
-    top: 0px;
+  height: 100vh;
+  z-index: -10;
+  position: fixed;
+  top: 0px;
 }*/
+
 body {
-  	height: 100vh;
-  	background-color: #fefefe;
-  	background: linear-gradient(#7ad2fa 0%, #c5ebe2 100%);
-  	background-repeat: no-repeat;
-  	background-size: cover;
+  min-height: 700px;
+  background: linear-gradient(#7ad2fa 0%, #c5ebe2 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .container {
+  position: relative;
 	width: 100%;
-	min-height: 100%;
+  height: 100vh;
 	text-align: center;
+	margin: auto;
+	padding: 0 30px;
+  margin-top: 100px;
 }
 .form-container {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .contant-title h1 {
 	font-size: 38px;
@@ -38,8 +44,25 @@ body {
 	padding: 10px;
 }
 
-.content-wrap {
+.contant-title span {
+  font-size: 18px;
+}
+.contant-title a {
 	padding: 10px;
+	color: #000;
+	
+	text-decoration: none;
+	transition: all 0.25s ease;
+}
+.contant-title a:hover {
+	color: #555560;
+}
+
+.content-wrap {
+	max-width: 400px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 40px 20px;
 	border: 1px solid #f2f2f2;
 	border-radius: 10px;
 	background-color: #f2f2f2;
@@ -56,7 +79,8 @@ body {
 }
 .write-ipt, .answer-ipt {
 	width: 300px;
-	margin: 10px;
+	margin-top: 10px;
+  margin-bottom: 10px;
 	padding: 10px;
 	border: 1px solid #555560;
 	border-radius: 3px;
@@ -104,14 +128,14 @@ body {
 
 
 @media (max-width: 500px) {
-	.form-container {
+	/*.form-container {
 		overflow-y: scroll;
-	}
+	}*/
 	.contant-title h1 {
 		font-size: 30px;
 	}
 	.write-ipt, .answer-ipt {
-		width: 250px;
+		width: 240px;
 		padding: 5px;
 	}
 	.section1, .section2, .section3 {
@@ -126,4 +150,10 @@ body {
 		font-size: 14px;
 		letter-spacing: 0;
 	}
+}
+
+@media (min-height: 800px) {
+  .container {
+    margin-top: 0;
+  }
 }
